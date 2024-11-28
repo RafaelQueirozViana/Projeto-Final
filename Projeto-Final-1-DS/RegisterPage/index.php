@@ -58,7 +58,7 @@ $sql = "INSERT INTO cadastro (cpf,nome,email,telefone,nascimento,senha)
         <div class="right-container">
             <form id="form" method="POST">
                 <h1 class="title">Criar Conta</h1>
-                <p id="join-text">Já tem uma conta? <a class="link-text" href="../LoginPage/index.html">Entrar</a></p>
+                <p id="join-text">Já tem uma conta? <a class="link-text" href="../LoginPage/index.php">Entrar</a></p>
 
                 <div class="input-container">
                     <div class="grudado-inputs">
