@@ -33,7 +33,7 @@ $sql = "INSERT INTO cadastro (cpf,nome,email,telefone,nascimento,senha)
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
