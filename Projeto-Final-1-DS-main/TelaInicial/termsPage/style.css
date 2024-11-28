@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+  
+}
+
+:root {
+    --main-color:#13161d;
+    --primary-color: #0f1115;
+    --second-color :rgb(97, 0, 253);
+    --site-spacing: 6rem;
+    --terciary-color: #16181c;
+
+
+    --third-color: #292d34;
+    
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+ 
+    font-family: "Poppins", serif;
+    overflow-x: hidden;
+    background-color: #0f1115fa;
+    
+
+}
+ul,li,a {
+    text-decoration: none;
+    list-style: none;
+   
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+ 
+}
+
+.campeonats-container {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: initial;
+    gap: 10px;
+    
+    width: 100%;
+    overflow-x: auto;
+}
+
+.campeonats-container::-webkit-scrollbar {
+    display: none; 
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 11vh;
+    padding: 0 var(--site-spacing);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.116);
+    z-index: 11111;
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
+    right: 0;
+
+}
+
+.header .logo-img {
+    height: 50px;
+    margin-top: 10px;
+}
+
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+  
+}
+
+.nav a {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+   
+}
+
+
+.nav a:hover {
+   color: #c6c3c3b7;
+}
+
+.nav .selected-link {
+color: var(--second-color);
+}
+
+.nav .selected-link:hover {
+    color: rgba(90, 13, 215, 0.589);
+    }
+
+
+.img-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-box a:nth-child(-n + 2) {
+    display: none;
+}
+.img-box .account-icon {
+    height: 40px;
+
+}
+
+.img-box .carrinho-img {
+
+    height: 40px;
+}
+
+.main-section {
+    padding: 2rem var(--site-spacing);
+    min-height: 89vh;
+}
+
+
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+
+    flex-wrap: wrap;
+    
+
+}
+
+#back-page {
+    color: #dedede;
+    background-image: url(./imagens/backArrow.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 30px;
+    background-size: 20px;
+    font-family: 200;
+}
+
+#back-page:hover {
+    text-decoration: underline;
+}
+
+.input-box {
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 20px;
+    
+    
+}
+
+.input-box input {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0 3rem;
+    font-size: 17px;
+    color: #dedede;
+    transition: all .3s ease;
+    border-radius: 5px;
+    background-color:#0f1115;
+   
+   
+ 
+    
+     
+}
+
+.input-box input:focus {
+
+    text-align: left;
+    transition: all .2s ease;
+    background-color: #00000080;
+}
+
+.input-box input::placeholder {
+    color: #a0a0a0;
+}
+
+.input-box img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 25px;
+    opacity: .5;
+}
+
+.imprimir-button {
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    transition: all .2s ease;
+}
+
+
+.imprimir-button:hover {
+    background-color: #00000080;
+}
+
+.imprimir-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    background-image: url(./imagens/impressoraIcon.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    padding-left: 2.5rem;
+    background-position: left;
+    color: #dedede;
+    font-weight: 100;
+    font-size: 19px;
+    cursor: pointer;
+  
+}
+
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+ 
+}
+
+.text-box {
+    
+    padding: 1rem 0;
+}
+
+
+.title {
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(207, 207, 207);
+}
+
+
+
+.text-box .title {
+    margin-bottom: 10px;
+}
+
+.text-box .subtitle {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-weight: 500;
+   
+   font-size: 22px;
+}
+
+.paragraph {
+    color: #b4b4b4;
+}
+
+.footer {
+    width: 100%;
+    
+    background-color: var(--terciary-color);
+    padding: 5% 10%;
+    min-height: 50vh;
+
+ 
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 2rem;
+     margin-bottom: 50px;
+     padding: 0 3%;
+     
+     
+ 
+}
+
+.colum {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.colum h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(196, 188, 188);
+}
+
+.colum a {
+    color: rgb(149, 149, 149);
+    transition: color .3s ease;
+ 
+}
+
+.colum a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.bottom-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 5px solid rgb(186, 186, 186);
+    padding-top: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bottom-footer img{
+    height: 50px;
+}
+
+
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.social-links img {
+    height: 40px;
+}
+
+@media(max-width:1200px) {
+    .nav a{
+        display: none;
+    }
+
+    .img-box a{
+        display: flex !important;
+    }
+}
+
+@media(max-width:980px) {
+    .input-box {
+        width: 100%;
+        order: 2;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    #back-page {
+       order: 1;
+    }
+
+    .imprimir-button {
+    order: 1;
+    }
+}
+
+
+
+@media(max-width:750px) {
+    .mobile-nav {
+        display: flex;
+    }
+
+    .footer {
+
+        margin-bottom: 62px;
+    }
+    .imprimir-button {
+        padding: 0;
+    }
+    .imprimir-btn {
+        background-position: right;
+        padding: 0;
+        width: 30px;
+        height: 40px;
+     
+    }
+
+
+    .delete-txt {
+        display: none;
+    }
+
+    :root {
+      
+        --site-spacing: 3rem;  
+    }
+
+    
+
+}
+
+@media(max-width:550px) {
+    :root {
+      
+        --site-spacing: 1rem;  
+    }
+}
